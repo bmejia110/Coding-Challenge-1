@@ -24,7 +24,7 @@ console.log(productNames, productDetails);
 // Task 3: Assignment Operators
 
 let accountBalance = 1000;
-console.log('Initial Balance: $${accountBalance}' );
+console.log(accountBalance);
 accountBalance += 500;
 console.log(accountBalance);
 accountBalance -= 200;
@@ -49,3 +49,13 @@ console.log(employeeScore1 === employeeScore2);
 console.log(employeeScore1 !== employeeScore2);
 
 
+// Task 5: Logical Operators
+
+let hasKeyCard = true;
+let hasPermission = false;
+let canAccessBuilding = hasKeyCard && hasPermission;
+console.log(canAccessBuilding);
+let canAccessRestrictedArea = hasKeyCard || hasPermission;
+console.log(canAccessRestrictedArea);
+let isDeniedAccess = !(hasKeyCard && hasPermission);
+console.log(isDeniedAccess);
